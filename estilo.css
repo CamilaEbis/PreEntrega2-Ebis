@@ -7,13 +7,14 @@
 }
 
 header{
-    height: 20%;
+    height: auto;
     width: 100%;
     background-color:rgb(241, 192, 126);
     font-size: 25px;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .logo{
     height: 130px;
     border: 2px solid chocolate;
@@ -35,63 +36,37 @@ header{
     text-decoration: underline;
 }
 
-@media (max-width: 400px){
-    .barra a{
-        flex-direction: column-reverse;
-        color: black;
-    }
+.navbar{
+    background-color: rgb(241, 192, 126) !important;
+    float: right;
 }
-
 
 main{
     width: 100%;
     background-color: rgb(253, 239, 234);
 }
-.call{
-    color:sandybrown;
-    width: 40%;
-    float:left;
-    background-color:white;
-    border: 5px solid chocolate;
-    padding: 5px 5px 10px 10px;
-    margin-left: 10%;
-    margin-top: 2%;
-    animation-name: traslado;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-}
-
-@keyframes traslado{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(500px)
-    }
-}
 
 h3{
     color: chocolate;
-    margin-bottom: 20px;
-    margin: 40px;
+    margin: 20px;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
 }
-.call p{
-    font-size: 20px;
-    margin-bottom: 20px;
+
+.img-lenceria{
+    background-color: gray;
+    background-image: url(imagen/blanco.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
-.call a{
-    background-color: sandybrown;
-    color:white;
-    text-decoration: none;
-    border-radius: 5px;
+
+.titulo-lenceria a{
+    color: lightsalmon;
+    background-color: honeydew;
     padding: 10px 20px;
     float: right;
-}
-.call a:hover{
-    background-color: crimson;
-    border: 2px solid orangered;
+
 }
 
 h1{
@@ -216,123 +191,8 @@ input::placeholder{
     background-image: url(imagen/Logo\ 3.jpg);
 }
 
-#carrusel-caja{
-    -moz-animation: automatizacion 15s infinite linear;
-    -o-animation: automatizacion 15s infinite linear;
-    -webkit-animation: automatizacion 15s infinite linear;
-    animation: automatizacion 15s infinite linear;
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-
-    height: 400px;
-    width: 300%;
-}
-
-#carrusel-contenido {
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: left;
-}
-
-.imagen{
-    height: 450px;
-    width: auto;
-}
-
-.carrusel-elemento {
-    float: left;
-    width: 33.333%;
-}
-
-@-moz-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
-@-webkit-keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
+@media screen and (max-width: 700px){
+    .logo{
+        height: 70px;
     }
 }

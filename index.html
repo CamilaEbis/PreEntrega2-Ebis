@@ -6,47 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PreEntrega1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <title>PreEntrega1</title>
 </head>
 <body>
-    <header>
+    <header class="container-fluid">
         <img class="logo" src="imagen/Logo 3.jpg">
-
-        <nav class="barra">
-            <ul>
-                 <li><a href="#">Inicio</a></li>
-                 <li><a href="child/productos.html">Productos</a></li> 
-                 <li><a href="child/preguntas.html">Preguntas Frecuentes</a></li>
-                 <li><a href="child/talles.html">Talles</a></li>
-                 <li><a href="child/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <!--inicio navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./child/preguntas.html">Preguntas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./child/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./child/talles.html">Talles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./child/contacto.html">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </header>   
     <main>
-        <h2 id="sec1">Nosotros</h2>
-        <section class="sec sec1">
-            <div class="call">
-                <h3>Lenceria de Diseño</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate officia hic natus? Totam quaerat doloribus iusto at magni suscipit, saepe, atque sunt laborum et, possimus quia rerum! Voluptate, ab quos?</p>
-                <a href="contacto.html">Suscribite</a>
+        <section class="container-fluid">
+            <div class="row">
+                <aside class="img-lenceria col-sm-6"></aside>
+                <aside class="titulo-lenceria col-sm-6">
+                    <h3>Lenceria de Diseño</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem voluptatum quis quibusdam neque corporis?</p>
+                    <a href="./child/contacto.html">Suscribite</a>
+                </aside>
             </div>
         </section>
         <h2 id="sec2">Productos Destacados</h2>
-        <section class="sec"></section>
-            <div id="carrusel-contenido">
-                <div id="carrusel-caja">
-                    <div class="carrusel-elemento">
-                    <img class="imagen" src="imagen/gris.jpg">
-                    </div>
-                    <div class="carrusel-elemento">
-                    <img class="imagen" src="imagen/bordo.jpg">
-                    </div>
-                    <div class="carrusel-elemento">
-                    <img class="imagen" src="imagen/sombrero.jpg">
-                    </div>
+        <section class="sec container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="imagen/gris.jpg" alt="imagen"
+                    class="img-fluid">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, assumenda?</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="imagen/bordo.jpg" alt="imagen"
+                    class="img-fluid">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, assumenda?</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <img src="imagen/verde.jpg" alt="imagen"
+                    class="img-fluid">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, assumenda?</p>
                 </div>
             </div>
+        </section>
         <h2 id="sec3">Mas Vendidos</h2>
         <section class="sec"></section>
     </main>
@@ -58,5 +80,8 @@
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
