@@ -12,33 +12,15 @@ header {
   font-size: 25px;
   padding: 10px;
 }
-
-.logo {
+header .logo {
   height: 130px;
   border: 2px solid rgb(248, 154, 120);
 }
-
-.barra {
-  float: right;
-  padding: 8%;
-}
-
-.barra ul li {
+header .ul li {
   list-style: none;
   display: inline-block;
 }
-
-.barra a {
-  text-decoration: none;
-  color: white;
-}
-
-.barra a:hover {
-  color: rgb(245, 199, 138);
-  text-decoration: underline;
-}
-
-.navbar {
+header .navbar {
   background-color: rgb(245, 199, 138) !important;
   float: right;
 }
@@ -47,37 +29,13 @@ main {
   width: 100%;
   background-color: rgb(253, 239, 234);
 }
-
-h3 {
-  color: rgb(248, 154, 120);
-  margin: 20px;
-  font-family: "Dancing Script", cursive;
-  font-size: 30px;
-}
-
-.img-lenceria {
-  background-color: white;
-  background-image: url(../imagen/blanco.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.titulo-lenceria a {
-  color: lightsalmon;
-  background-color: honeydew;
-  padding: 10px 20px;
-  float: right;
-}
-
-h1 {
+main h1 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   color: rgb(248, 154, 120);
   text-align: center;
 }
-
-h2 {
+main h2 {
   text-align: center;
   background-color: rgb(247, 206, 152);
   font-weight: bold;
@@ -86,30 +44,117 @@ h2 {
   color: white;
   font-size: 30px;
 }
-
-.sec {
-  width: 100%;
-  height: auto;
+main .container-fluid .img-lenceria {
+  background-color: white;
+  background-image: url(../imagen/blanco.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
-
-.sec1 {
-  height: 400px;
+main .container-fluid .titulo-lenceria a {
+  color: lightsalmon;
+  background-color: honeydew;
+  padding: 10px 20px;
+  float: right;
 }
-
-p {
+main .container-fluid h3 {
+  color: rgb(248, 154, 120);
+  margin: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+main .container-fluid .p-lenceria {
   font-size: 20px;
   color: rgb(248, 154, 120);
   margin-left: 15%;
   margin-right: 15%;
   padding-top: 3%;
 }
-
-table {
+main .sec {
+  width: 100%;
+  height: auto;
+}
+main .sec1 {
+  height: 300px;
+}
+main table {
   color: lightsalmon;
   font-size: 20px;
   border-color: rgb(248, 154, 120);
   margin-top: 10%;
   margin-left: 20%;
+}
+main p {
+  font-size: 20px;
+  color: rgb(248, 154, 120);
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 3%;
+}
+main form {
+  width: 20%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  color: lightsalmon;
+}
+main .imagen {
+  height: 80%;
+}
+main input::placeholder {
+  color: lightsalmon;
+}
+main .grilla {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 180px);
+  grid-template-areas: "img1 img2 img3 img3" "img4 img5 img3 img3" "img4 img6 img7 img8";
+  grid-gap: 10px;
+}
+main .grilla .item {
+  border: 2px solid lightsalmon;
+  background-size: cover;
+  background-position: center;
+  border-radius: 9px;
+}
+main .grilla .item1 {
+  grid-area: img1;
+  background-image: url(../imagen/gris.jpg);
+}
+main .grilla .item2 {
+  grid-area: img2;
+  background-image: url(../imagen/blanco.jpg);
+}
+main .grilla .item3 {
+  grid-area: img3;
+  background-image: url(../imagen/bordo.jpg);
+}
+main .grilla .item4 {
+  grid-area: img4;
+  background-image: url(../imagen/beige.jpg);
+}
+main .grilla .item5 {
+  grid-area: img5;
+  background-image: url(../imagen/rosa.jpg);
+}
+main .grilla .item6 {
+  grid-area: img6;
+  background-image: url(../imagen/sombrero.jpg);
+}
+main .grilla .item7 {
+  grid-area: img7;
+  background-image: url(../imagen/verde.jpg);
+}
+main .grilla .item8 {
+  grid-area: img8;
+  background-image: url(../imagen/Logo\ 3.jpg);
+}
+@media screen and (max-width: 700px) {
+  main .grilla .logo {
+    height: 70px;
+  }
 }
 
 footer {
@@ -119,84 +164,11 @@ footer {
   position: relative;
   bottom: 0;
 }
-
-form {
-  width: 20%;
-  padding: 16px;
-  border-radius: 10px;
-  margin: auto;
+footer p {
   color: lightsalmon;
 }
-
-input::placeholder {
+footer .redes {
   color: lightsalmon;
-}
-
-.imagen {
-  height: 80%;
-}
-
-.grilla {
-  height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 180px);
-  grid-template-areas: "img1 img2 img3 img3" "img4 img5 img3 img3" "img4 img6 img7 img8";
-  grid-gap: 10px;
-}
-
-.item {
-  border: 2px solid lightsalmon;
-  background-size: cover;
-  background-position: center;
-  border-radius: 9px;
-}
-
-.item1 {
-  grid-area: img1;
-  background-image: url(../imagen/gris.jpg);
-}
-
-.item2 {
-  grid-area: img2;
-  background-image: url(../imagen/blanco.jpg);
-}
-
-.item3 {
-  grid-area: img3;
-  background-image: url(../imagen/bordo.jpg);
-}
-
-.item4 {
-  grid-area: img4;
-  background-image: url(../imagen/beige.jpg);
-}
-
-.item5 {
-  grid-area: img5;
-  background-image: url(../imagen/rosa.jpg);
-}
-
-.item6 {
-  grid-area: img6;
-  background-image: url(../imagen/sombrero.jpg);
-}
-
-.item7 {
-  grid-area: img7;
-  background-image: url(../imagen/verde.jpg);
-}
-
-.item8 {
-  grid-area: img8;
-  background-image: url(../imagen/Logo\ 3.jpg);
-}
-
-@media screen and (max-width: 700px) {
-  .logo {
-    height: 70px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
